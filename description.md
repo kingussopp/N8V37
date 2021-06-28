@@ -1,10 +1,10 @@
-# N8V37's description
+<span style="color:#50c878; font-family: 'Bebas Neue'; font-size: 2em;">N8V37's description</span>
 
 N8V37 is a platform that converts the traditional educational system into a free, fun and full distance one.
-## Summary
+# Summary
 
-- [N8V37's description](#N8V37's-description)
   - [Summary](#Summary)
+  - [The schedule](#The-schedule)
   - [Ressources](#Ressources)
     - [theoretical part](#theoretical-part)
       - [courses](#courses)
@@ -18,6 +18,8 @@ N8V37 is a platform that converts the traditional educational system into a free
       - [tests](#tests)
   - [Roles](#Roles)
 
+# The schedule
+this feature will enable the students to create their own time tables based on their motivation and their ability to follow the course. courses won't have a time limit as it makes the educational experience better for the client.
 
 # Ressources
 the platform will have courses, TDs, TPs, quizzes and eventual evalutions that will enable the students to verify their improvement anytime.
@@ -48,4 +50,4 @@ the platform will have three roles :
 ### the teacher 
  this role will enable its user to add or remove sections in the platform and manage the ressourcesof the platform.
 ### the supervisor 
- its sole role will be to manage the teacher role and may fill the shoes of a teacher.
+ its sole role will be to manage the teachers and may fill the shoes of one. it focuses on the organisational side of the school.
