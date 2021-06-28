@@ -8,13 +8,13 @@ N8V37 is a platform that converts the traditional educational system into a free
   - [Ressources](#Ressources)
     - [theoretical part](#theoretical-part)
       - [courses](#courses)
-      - [TD](#TD)
+      - [TDs](##TDs)
       - [quizzes](#quizzes)
         - [answer](#answer)
         - [score](#score)
         - [evaluation](#evaluation)
     - [practical part](#practical-part)
-      - [TP](#TP)
+      - [TPs](#TPs)
       - [tests](#tests)
   - [Roles](#Roles)
 
@@ -52,3 +52,6 @@ the platform will have three roles :
  this role will enable its user to add or remove sections in the platform and manage the ressourcesof the platform.
 ## the supervisor 
  its sole role will be to manage the teachers and may fill the shoes of one. it focuses on the organisational side of the school.
+
+# FAQ
+a dedicated section for eventual student questions. The questions will be labeled depending of the subrole every teacher will have to optimise the notifications system. the aquestions and their answers will be recorded in "regular questions" file to help the students get a better understanding of the problem before requesting the teacher's assistance.
