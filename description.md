@@ -17,8 +17,7 @@ N8V37 is a platform that converts the traditional educational system into a free
       - [TP](#TP)
       - [tests](#tests)
   - [Roles](#Roles)
-  - [Option du CLI](#option-du-cli)
-  - [Éditer les styles de la carte](#éditer-les-styles-de-la-carte)
+
 
 # Ressources
 the platform will have courses, TDs, TPs, quizzes and eventual evalutions that will enable the students to verify their improvement anytime.
