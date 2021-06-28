@@ -23,6 +23,7 @@ this feature will enable the students to create their own time tables based on t
 
 # Ressources
 the platform will have courses, TDs, TPs, quizzes and eventual evalutions that will enable the students to verify their improvement anytime.
+
 ## theoritical part
 ### courses
 the courses will be in PDF version with an option to add more formats if possible.
@@ -43,11 +44,11 @@ The platform will have a text editor to execute the TP scripts with a suggested 
 ### tests
 The tests will also be in MCQ format but are time limited.Also the solutions can't be accessed by the student unless answers are sent to the teacher whom have put the test. the scores are then sent to the server database so an overall score can be calculated when the season is finished.
 
-## Roles
+# Roles 
 the platform will have three roles : 
-### the student 
+## the student 
  this is the default role and will enable the user to view the ressources in the platforman dinteract with them
-### the teacher 
+## the teacher 
  this role will enable its user to add or remove sections in the platform and manage the ressourcesof the platform.
-### the supervisor 
+## the supervisor 
  its sole role will be to manage the teachers and may fill the shoes of one. it focuses on the organisational side of the school.
