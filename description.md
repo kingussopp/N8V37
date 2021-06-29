@@ -24,18 +24,18 @@ this feature will enable the students to create their own time tables based on t
 # Ressources
 the platform will have courses, TDs, TPs, quizzes and eventual evalutions that will enable the students to verify their improvement anytime.
 
-## theoritical part
+## theoretical part
 ### courses
 the courses will be in PDF version with an option to add more formats if possible.
 ### TDs
 the TDs will also be in PDF format mainly with a "focus" option where the student can choose to restrict his access to solutions of the exercices they didn't finish yet.
 ### quizzes
 the quizzes will have 3 phases :
-#### answer 
+#### 1)answer :
  the student will have MCQ format with a theory oriented questions .
-#### score 
+#### 2)score :
  the student will have access to scores he got from every question and an eventual general score.
-#### evaluation 
+#### 3)evaluation :
  detailed answers for the MCQ so the student can either improve their answer or rectify it.
 
 ## practical part

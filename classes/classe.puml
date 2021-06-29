@@ -1,0 +1,68 @@
+@startuml class_diagram
+package com.N8V37{
+    package com.N8V37.Ressources{
+        abstract material
+        abstract test
+        TD --|> material        
+        cours --|> material
+        TP --|> material
+        evaluation --|> test
+        quizz --|> test
+        class library
+    }
+
+    class Main
+    package com.N8V37.Roles{
+        supervisor --|> teacher
+        teacher --|> member
+    
+    }
+    package com.N8V37.Features{
+        class schedule
+        class FAQ
+        namespace gfx{
+            class dummy
+            } 
+        
+        
+    }
+    member --* schedule
+    class member{
+        - member_id : int
+        - member_lastname : string
+        - member_firstname : string
+        - wallet : List<String>
+        - Login : string
+        - password : string 
+        - Schedule : schedule      
+        + getinfo()
+        + setinfo()
+        + destruct()
+        + editFAQ()
+        + editschedule()
+    }
+    class teacher {
+        + addcourse()
+        + delcourse()
+        + editcourse()
+        + addmember()
+        + delmember()
+        
+    }
+    class supervisor{
+        + setRole()
+    }
+    abstract test{
+        - test_id : int
+        - length : int
+        - question : string
+        - title : string
+        - answer : file
+
+    }
+    class evaluation{
+        + period : int
+        - setTime()
+    }
+}
+@enduml
