@@ -49,9 +49,9 @@ the platform will have three roles :
 ## the student 
  this is the default role and will enable the user to view the ressources in the platforman dinteract with them
 ## the teacher 
- this role will enable its user to add or remove sections in the platform and manage the ressourcesof the platform.
+ this role will enable its user to add or remove sections in the platform and manage the ressources of the platform.
 ## the supervisor 
- its sole role will be to manage the teachers and may fill the shoes of one. it focuses on the organisational side of the school.
+ its sole role will be to manage the teachers and may fill the shoes of one. it focuses on the organisational side of the platform.
 
 # FAQ
 a dedicated section for eventual student questions. The questions will be labeled depending of the subrole every teacher will have to optimise the notifications system. the aquestions and their answers will be recorded in "regular questions" file to help the students get a better understanding of the problem before requesting the teacher's assistance.

@@ -1,45 +1,56 @@
 @startuml class_diagram
 package com.N8V37{
+    /' definition of the relationship
+     between classes'/
     package com.N8V37.Ressources{
-        abstract material
+
         class library
+        abstract docs
         TD --|> material        
         cours --|> material
         TP --|> material
         evaluation --|> test
         quizz --|> test
-        test --o "0..*" question 
-        test o-- library
-        material o-- library
-        
+        test --o "1..*" question 
+        test --|> docs 
+        material --|> docs
+        library --o docs     
     }
-
-
     package com.N8V37.Roles{
         supervisor --> teacher
-        teacher --> member
-    
+        teacher --> member   
     }
     package com.N8V37.Features{
         class schedule
         class FAQ
         namespace gfx{
             class dummy
-            } 
-        
-        
+            }         
     }
-    member --# schedule
-    class Main
+    /'member --# schedule
+    member --# FAQ
+    Main -- com.N8V37.Roles
+    Main -- module
+    Main -- com.N8V37.Features'/
+    ' definition of the independent classes    
     class module{
-        + module_id : int
+        - module_id : int
+        - title : string
+        - support : docs
+        + add_supp(int id)
+        + get_supp(int id)
+        + set_id()
+        + get_id()
+        + set_title()
+        + get_title()
     }
     module "1..*" -- library : extracts >
+    ' definition of "role" classes (done)
     class member{
         - member_id : int
         - member_lastname : string
         - member_firstname : string
-        - wallet : List<String>
+        - wallet : List<string>
         - Login : string
         - password : string 
         - Schedule : schedule      
@@ -54,30 +65,69 @@ package com.N8V37{
         + delcourse()
         + editcourse()
         + addmember()
-        + delmember()
-        
+        + delmember()       
     }
     class supervisor{
         + setRole()
     }
-    class test{
-        - test_id : int
-        - length : int
-        - question : question
+    ' definition of "ressources" classes
+    abstract docs{
+        - id : int
         - title : string
+        + set_id()
+        + get_id()
+        + set_title()
+        +get_title()
+    }
+    class test{
+        - question : question
         - answer : file
         + send_answer()
-
+        + add_question()
+        + set_answer()
     }
     class evaluation{
-        + period : int
-        - setTime()
+        - period : int
+        + setTime()
     }
-    class question{
-        + question_id : int
-        + question_weight : int
-        + edit()
+    class quizz{
 
     }
+    class question{
+        + body : string
+        + question_id : int
+        + question_weight : int
+        + answer : int
+        + options : HashMap<integer,string> 
+        + set_id()
+        + get_id()
+        + set_weight()
+        + get_weight()
+        + delete()
+        + set_answer()
+        + set_body()
+        + set_options()
+        + get_options() 
+    }
+    class library{
+        + assets : HashMap<integer,docs>
+        + add_docs(int id)
+        + get_docs(int id)
+        + del_docs(int id)
+    }
+    class material{
+        + show()
+        + del()
+    }
+    class cours{
+
+    }
+    class TD{
+
+    }
+    class TP{
+
+    }
+    ' definition of "features" classes
 }
 @enduml
