@@ -8,6 +8,7 @@ package com.N8V37{
         TP --|> material
         evaluation --|> test
         quizz --|> test
+        test -- question
         class library
     }
 
