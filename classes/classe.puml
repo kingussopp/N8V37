@@ -36,7 +36,7 @@ package com.N8V37{
     class module{
         - module_id : int
         - title : string
-        - support : docs
+        - support : assets
         + add_supp(int id)
         + get_supp(int id)
         + set_id()
@@ -123,10 +123,14 @@ package com.N8V37{
 
     }
     class TD{
-
+        + answer : file
+        + get_answer()
+        + set_answer()
     }
     class TP{
-
+        + answer : file
+        + get_answer()
+        + set_answer()
     }
     ' definition of "features" classes
 }
