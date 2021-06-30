@@ -2,20 +2,22 @@
 package com.N8V37{
     package com.N8V37.Ressources{
         abstract material
-        abstract test
+        class library
         TD --|> material        
         cours --|> material
         TP --|> material
         evaluation --|> test
         quizz --|> test
-        test -- question
-        class library
+        test --o "0..*" question 
+        test o-- library
+        material o-- library
+        
     }
 
-    class Main
+
     package com.N8V37.Roles{
-        supervisor --|> teacher
-        teacher --|> member
+        supervisor --> teacher
+        teacher --> member
     
     }
     package com.N8V37.Features{
@@ -27,7 +29,12 @@ package com.N8V37{
         
         
     }
-    member --* schedule
+    member --# schedule
+    class Main
+    class module{
+        + module_id : int
+    }
+    module "1..*" -- library : extracts >
     class member{
         - member_id : int
         - member_lastname : string
@@ -53,17 +60,24 @@ package com.N8V37{
     class supervisor{
         + setRole()
     }
-    abstract test{
+    class test{
         - test_id : int
         - length : int
-        - question : string
+        - question : question
         - title : string
         - answer : file
+        + send_answer()
 
     }
     class evaluation{
         + period : int
         - setTime()
+    }
+    class question{
+        + question_id : int
+        + question_weight : int
+        + edit()
+
     }
 }
 @enduml
