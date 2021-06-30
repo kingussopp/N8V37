@@ -27,11 +27,11 @@ package com.N8V37{
             class dummy
             }         
     }
-    /'member --# schedule
+    member --# schedule
     member --# FAQ
     Main -- com.N8V37.Roles
     Main -- module
-    Main -- com.N8V37.Features'/
+    Main -- com.N8V37.Features
     ' definition of the independent classes    
     class module{
         - module_id : int
