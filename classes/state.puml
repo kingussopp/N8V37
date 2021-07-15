@@ -1,0 +1,19 @@
+@startuml state
+state idle{
+
+}
+[*] --> idle
+idle --> login : log in button
+login --> verify_login : entering the infos
+verify_login --> security_check : valid format
+security_check --> verify_login : non valid infos
+loading_the_name --> security_check : extracting the infos from the DB
+security_check --> browsing_modules : valid infos
+browsing_modules --> select_module
+select_module --> register : first enroll
+register --> access : supervisor control
+select_module --> access : non-first enroll
+access --> logout
+logout --> [*]
+
+@enduml
