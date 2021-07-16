@@ -16,7 +16,7 @@ module -> lib : get_id()
 lib -> a : show module
 a -> login : logout()
 login -> db : saving_infos
-db -> l_m : return to the menu
+db -> l_m : return to menu
 
 
 
