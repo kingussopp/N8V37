@@ -1,13 +1,22 @@
 @startuml state
-state idle{
-
+state infos_check{
+    state login
+    state verify_login
+    state security_check
+}
+state site_surfing{
+    state browsing_modules
+    state select_module
+    state register
+    state logout
+    state access
 }
 [*] --> idle
 idle --> login : log in button
 login --> verify_login : entering the infos
 verify_login --> security_check : valid format
 security_check --> verify_login : non valid infos
-loading_the_name --> security_check : extracting the infos from the DB
+loading_the_infos --> security_check : extracting the infos from the DB
 security_check --> browsing_modules : valid infos
 browsing_modules --> select_module
 select_module --> register : first enroll
