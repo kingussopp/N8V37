@@ -1,0 +1,23 @@
+@startuml Seq
+actor student as a
+participant login_menu as l_m
+participant security_check as s_c
+database database as db
+participant library as lib order 30
+a -> l_m :entering infos 
+l_m -> s_c
+s_c -> db : infos request
+db -> s_c : infos state
+s_c -> login : valid infos
+s_c -> l_m : invalid infos
+login -> a : show menu
+a -> module : choose module
+module -> lib : get_id()
+lib -> a : show module
+a -> login : logout()
+login -> db : saving_infos
+db -> l_m : return to the menu
+
+
+
+@enduml

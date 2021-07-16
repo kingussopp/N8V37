@@ -3,9 +3,9 @@
 @section('content')
     <h1>{{$title}}</h1>
     @if(count($services) > 0)
-        <ul>
+        <ul class="list-group">
             @foreach($services as $service)
-                <li>
+                <li class="list-group-item">
                     <font face="calibri" size="10px" color="#0000ff">
                         {{$service}}
                     </font>
