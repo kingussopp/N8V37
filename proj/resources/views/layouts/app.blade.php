@@ -7,6 +7,7 @@
         <title>{{config('app.name' , 'N8V37')}}</title>
     </head>
     <body>
+        @include('inc.navbar')
         <div class="container">
             @yield('content')
         </div>
