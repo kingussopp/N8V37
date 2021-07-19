@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/index','App\Http\Controllers\PagesController@index');
 Route::get('/about','App\Http\Controllers\PagesController@about');
 Route::get('/services','App\Http\Controllers\PagesController@services');
-
+Route::resource('posts', 'App\Http\Controllers\PostsController');
 /*Route::get('/about', function () {
     return view('pages.about');
 });

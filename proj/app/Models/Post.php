@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory;
+    //Table NAme
+    protected $table = 'posts';
+    //primary key
+    public $primaryKey = 'id';
+    //Timestamps
+    public $timestamps = true;
+
 }
