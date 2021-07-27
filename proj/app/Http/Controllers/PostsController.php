@@ -104,9 +104,9 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request, Post $post)
+    public function destroy(Post $post)
     {
-        $post = Post::where('id' , $request->id)->first();
+        //$post = Post::where('id' , $request->id)->first();
         $post->delete();
 
     
