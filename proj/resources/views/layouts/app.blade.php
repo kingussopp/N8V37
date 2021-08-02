@@ -36,9 +36,6 @@
             <!-- Page Content -->
             <main>
                 {{ $slot }}
-                git add . 
-                git add commit -m "message"
-                git push jetsream
             </main>
         </div>
 
