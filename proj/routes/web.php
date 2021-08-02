@@ -31,3 +31,7 @@ Route::get('/services', function () {
 Route::get('/users/{id}/{name}', function ($id, $name) {
     return 'this is '.$name.' with the id : '.$id;
 });*/
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
